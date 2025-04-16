@@ -41,14 +41,14 @@ footer {
     color: white;
 }
 .slide {
-    width: 30%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 3in; /* Set the width to 3 inches */
+    height: 3in; /* Set the height to 3 inches */
     display: none; /* Hide all slides initially */
 }
 
 .slideshow-container {
     position: relative;
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
 }
 
