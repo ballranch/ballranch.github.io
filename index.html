@@ -5,155 +5,585 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goats 'n Honey Haven</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Caveat&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Goats 'n Honey Haven</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Goats 'n Honey Haven Logo" class="logo-img">
+                <h1>Goats 'n Honey Haven</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="#cart"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
     </header>
+
     <section id="home">
-        <h2>Welcome to Goats 'n Honey Haven</h2>
-        <div class="veteran-badge">Service-Connected Veteran Owned, Woman-Led Farm</div>
-        <p>Where military precision meets natural beekeeping and compassionate animal husbandry. Our sustainable practices yield premium honey and bee products while our happy goats provide companionship and purpose.</p>
-        <p>Our farm combines the discipline and dedication from military service with a passion for sustainable agriculture, creating a haven for bees, goats, and humans alike.</p>
-        <div class="cta-buttons">
-            <a href="#products" class="cta-button">Explore Our Products</a>
-            <a href="#about" class="cta-button">Learn Our Story</a>
+        <div class="container">
+            <div class="veteran-badge">Service-Connected Veteran Owned, Woman-Led Farm</div>
+            <h2>Welcome to Goats 'n Honey Haven</h2>
+            <p>Where military precision meets natural beekeeping and compassionate animal husbandry. Our sustainable practices yield premium honey and bee products while our happy goats provide companionship and purpose.</p>
+            <p>Our farm combines the discipline and dedication from military service with a passion for sustainable agriculture, creating a haven for bees, goats, and humans alike.</p>
+            <div class="cta-buttons">
+                <a href="#shop" class="cta-button">Shop Our Products</a>
+                <a href="#about" class="cta-button secondary">Learn Our Story</a>
+            </div>
         </div>
     </section>
+
+    <!-- Newsletter Signup Banner -->
+    <section id="newsletter-banner">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h3>Join Our Hive Community</h3>
+                    <p>Subscribe to our newsletter for seasonal updates, special offers, beekeeping tips, and veteran stories.</p>
+                </div>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section id="about">
-        <h2>About Us</h2>
-        <div class="about-container">
-            <div class="about-section">
-                <h3>Our Story</h3>
-                <p>Goats 'n Honey Haven was born from the intersection of service and stewardship. After serving in the military, founder [Your Name] found healing and purpose through beekeeping and raising goats.</p>
-                <p>As a service-connected veteran and woman farmer, [Your Name] brings unique perspective and precision to agricultural practices. What began with two beehives and a pair of goats has grown into a thriving farm that honors military values of discipline, resilience, and attention to detail.</p>
-            </div>
-            <div class="about-section">
-                <h3>Our Promise</h3>
-                <ul>
-                    <li>Operating with the integrity and dedication instilled through military service</li>
-                    <li>Practicing sustainable beekeeping that prioritizes bee health and biodiversity</li>
-                    <li>Providing ethical care for our goat companions</li>
-                    <li>Producing premium, small-batch honey and bee products</li>
-                    <li>Creating educational opportunities for our community about pollinators and sustainable farming</li>
-                    <li>Supporting fellow veterans through agriculture</li>
-                </ul>
-            </div>
-            <div class="about-section">
-                <h3>Our Farm</h3>
-                <p>Nestled in [your location], our farm creates an ideal environment for both our bees and goats. Our apiary consists of [number] hives positioned to take advantage of local wildflowers, resulting in distinctively flavorful honey. Meanwhile, our goats enjoy spacious pastures and excellent care.</p>
-                <p>We employ sustainable practices across our operation, including:</p>
-                <ul>
-                    <li>Chemical-free hive management</li>
-                    <li>Natural goat care protocols</li>
-                    <li>Water conservation techniques</li>
-                    <li>Native pollinator plantings</li>
-                    <li>Eco-friendly packaging for all products</li>
-                </ul>
-                <p>Every jar of honey and bee product represents our commitment to quality, sustainability, and service.</p>
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-container">
+                <div class="about-section">
+                    <h3>Our Story</h3>
+                    <p>Goats 'n Honey Haven was born from the intersection of service and stewardship. After serving in the military, founder [Your Name] found healing and purpose through beekeeping and raising goats.</p>
+                    <p>As a service-connected veteran and woman farmer, [Your Name] brings unique perspective and precision to agricultural practices. What began with two beehives and a pair of goats has grown into a thriving farm that honors military values of discipline, resilience, and attention to detail.</p>
+                </div>
+                <div class="about-section">
+                    <h3>Our Promise</h3>
+                    <ul>
+                        <li>Operating with the integrity and dedication instilled through military service</li>
+                        <li>Practicing sustainable beekeeping that prioritizes bee health and biodiversity</li>
+                        <li>Providing ethical care for our goat companions</li>
+                        <li>Producing premium, small-batch honey and bee products</li>
+                        <li>Creating educational opportunities for our community about pollinators and sustainable farming</li>
+                        <li>Supporting fellow veterans through agriculture</li>
+                    </ul>
+                </div>
+                <div class="about-section">
+                    <h3>Our Farm</h3>
+                    <p>Nestled in [your location], our farm creates an ideal environment for both our bees and goats. Our apiary consists of [number] hives positioned to take advantage of local wildflowers, resulting in distinctively flavorful honey. Meanwhile, our goats enjoy spacious pastures and excellent care.</p>
+                    <p>We employ sustainable practices across our operation, including:</p>
+                    <ul>
+                        <li>Chemical-free hive management</li>
+                        <li>Natural goat care protocols</li>
+                        <li>Water conservation techniques</li>
+                        <li>Native pollinator plantings</li>
+                        <li>Eco-friendly packaging for all products</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+
     <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-category">
-            <h3>Our Honey Collection</h3>
-            <p>Our raw honey is harvested with care, minimally filtered to preserve beneficial enzymes and pollen, and never heated above natural hive temperatures.</p>
-            <ul>
-                <li><strong>Wildflower Honey:</strong> A rich, complex blend reflecting our local ecosystem's diverse flora</li>
-                <li><strong>Seasonal Variety Honey:</strong> Distinctive flavor notes from specific flower sources</li>
-                <li><strong>Special Reserve Honey:</strong> Our special offering with unique characteristics</li>
-            </ul>
-            <p>Each jar is bottled with the same precision and care that defined our military service.</p>
-        </div>
-        
-        <div class="product-category">
-            <h3>Bee Products</h3>
-            <p>Beyond honey, our bees provide remarkable substances we craft into:</p>
-            <ul>
-                <li><strong>Pure Beeswax Candles:</strong> Hand-poured, long-burning, with a subtle honey aroma</li>
-                <li><strong>Propolis Tincture:</strong> Supporting immune function with bee-collected plant resins</li>
-                <li><strong>Bee Pollen:</strong> Nature's complete superfood, collected fresh from our hives</li>
-                <li><strong>Honey-Based Skincare:</strong> Simple, natural products for radiant skin</li>
-            </ul>
-        </div>
-        
-        <div class="product-category">
-            <h3>Goat Companions</h3>
-            <p>While our farm focuses primarily on bee products, our goats are beloved farm members who:</p>
-            <ul>
-                <li>Help maintain our land through grazing</li>
-                <li>Provide companionship and joy</li>
-                <li>Serve as ambassadors during farm educational events</li>
-                <li>Remind us daily of the importance of gentle stewardship</li>
-            </ul>
-        </div>
-        
-        <div class="product-category">
-            <h3>Special Offerings</h3>
-            <ul>
-                <li>Bee and Agriculture Educational Workshops</li>
-                <li>Hive Hosting and Management Services</li>
-                <li>Veteran Discounts on All Products and Services</li>
-            </ul>
-            <p class="veteran-discount">Military and veteran discount of 10% available with valid ID.</p>
+        <div class="container">
+            <h2>Our Products</h2>
+            <p class="section-intro">Discover our range of premium honey and bee products, all created with the precision and dedication of our veteran-led team.</p>
+            
+            <div class="product-category">
+                <h3>Our Honey Collection</h3>
+                <p>Our raw honey is harvested with care, minimally filtered to preserve beneficial enzymes and pollen, and never heated above natural hive temperatures.</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="wildflower-honey.jpg" alt="Wildflower Honey" class="product-image">
+                        <div class="product-info">
+                            <h4>Wildflower Honey</h4>
+                            <p>A rich, complex blend reflecting our local ecosystem's diverse flora</p>
+                            <a href="#shop" class="view-product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="seasonal-honey.jpg" alt="Seasonal Variety Honey" class="product-image">
+                        <div class="product-info">
+                            <h4>Seasonal Variety Honey</h4>
+                            <p>Distinctive flavor notes from specific flower sources</p>
+                            <a href="#shop" class="view-product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="special-honey.jpg" alt="Special Reserve Honey" class="product-image">
+                        <div class="product-info">
+                            <h4>Special Reserve Honey</h4>
+                            <p>Our special offering with unique characteristics</p>
+                            <a href="#shop" class="view-product">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-category">
+                <h3>Bee Products</h3>
+                <p>Beyond honey, our bees provide remarkable substances we craft into:</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="beeswax-candles.jpg" alt="Beeswax Candles" class="product-image">
+                        <div class="product-info">
+                            <h4>Pure Beeswax Candles</h4>
+                            <p>Hand-poured, long-burning, with a subtle honey aroma</p>
+                            <a href="#shop" class="view-product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="propolis.jpg" alt="Propolis Tincture" class="product-image">
+                        <div class="product-info">
+                            <h4>Propolis Tincture</h4>
+                            <p>Supporting immune function with bee-collected plant resins</p>
+                            <a href="#shop" class="view-product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="skincare.jpg" alt="Honey Skincare" class="product-image">
+                        <div class="product-info">
+                            <h4>Honey-Based Skincare</h4>
+                            <p>Simple, natural products for radiant skin</p>
+                            <a href="#shop" class="view-product">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-banner">
+                <p>Visit our online shop to view all products and place your order today!</p>
+                <a href="#shop" class="cta-button">Shop Now</a>
+            </div>
         </div>
     </section>
+
+    <!-- NEW: Online Shop Section -->
+    <section id="shop">
+        <div class="container">
+            <h2>Online Shop</h2>
+            <p class="section-intro">Purchase our premium products directly from our farm to your door. All products are made with care and military precision.</p>
+            
+            <div class="shop-filters">
+                <h3>Shop By Category</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="honey">Honey</button>
+                    <button class="filter-btn" data-filter="beeswax">Beeswax Products</button>
+                    <button class="filter-btn" data-filter="gifts">Gift Sets</button>
+                </div>
+            </div>
+            
+            <div class="shop-grid">
+                <!-- Shop Item 1 -->
+                <div class="shop-item" data-category="honey">
+                    <div class="item-image">
+                        <img src="wildflower-honey-jar.jpg" alt="Wildflower Honey Jar">
+                        <div class="item-badge">Bestseller</div>
+                    </div>
+                    <div class="item-details">
+                        <h4>Wildflower Honey - 16oz Jar</h4>
+                        <p class="item-description">Pure, raw wildflower honey harvested from our local hives.</p>
+                        <div class="item-price-row">
+                            <span class="item-price">$12.95</span>
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(32)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Shop Item 2 -->
+                <div class="shop-item" data-category="beeswax">
+                    <div class="item-image">
+                        <img src="beeswax-candle-set.jpg" alt="Beeswax Candle Set">
+                    </div>
+                    <div class="item-details">
+                        <h4>Beeswax Candle Set - 3 Pack</h4>
+                        <p class="item-description">Hand-poured 100% pure beeswax candles in various sizes.</p>
+                        <div class="item-price-row">
+                            <span class="item-price">$24.95</span>
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(18)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Shop Item 3 -->
+                <div class="shop-item" data-category="honey">
+                    <div class="item-image">
+                        <img src="special-reserve-honey.jpg" alt="Special Reserve Honey">
+                        <div class="item-badge">Limited</div>
+                    </div>
+                    <div class="item-details">
+                        <h4>Special Reserve Honey - 8oz Jar</h4>
+                        <p class="item-description">Our rare, single-source honey with distinctive flavor notes.</p>
+                        <div class="item-price-row">
+                            <span class="item-price">$18.95</span>
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(9)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Shop Item 4 -->
+                <div class="shop-item" data-category="gifts">
+                    <div class="item-image">
+                        <img src="gift-basket.jpg" alt="Honey Gift Basket">
+                    </div>
+                    <div class="item-details">
+                        <h4>Honey Lover's Gift Basket</h4>
+                        <p class="item-description">Complete gift set with honey varieties, beeswax candle, and honey dipper.</p>
+                        <div class="item-price-row">
+                            <span class="item-price">$42.95</span>
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Add more shop items as needed -->
+            </div>
+            
+            <div class="shop-info">
+                <div class="info-card">
+                    <i class="fas fa-truck"></i>
+                    <h4>Free Shipping</h4>
+                    <p>On orders over $50</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-medal"></i>
+                    <h4>Military Discount</h4>
+                    <p>10% off for all service members</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Eco-Friendly</h4>
+                    <p>Sustainable packaging on all orders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Farm & Beekeeping Blog</h2>
+            <p class="section-intro">Stories, tips, and insights from our journey connecting military service to sustainable agriculture</p>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="military-to-beekeeper.jpg" alt="Military to Beekeeper Transition">
+                        <div class="post-category">Veteran Stories</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>From Military Service to Beekeeping: Finding Peace in the Hive</h3>
+                        <div class="post-meta">
+                            <span class="post-date">April 10, 2025</span>
+                            <span class="post-author">By [Your Name]</span>
+                        </div>
+                        <p>How the structure and purpose of beekeeping helped me transition from military life to civilian purpose...</p>
+                        <a href="#" class="read-more">Read Full Article</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="spring-beekeeping.jpg" alt="Spring Beekeeping Tips">
+                        <div class="post-category">Beekeeping Tips</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Essential Spring Hive Management for Healthy Colonies</h3>
+                        <div class="post-meta">
+                            <span class="post-date">March 15, 2025</span>
+                            <span class="post-author">By [Your Name]</span>
+                        </div>
+                        <p>As spring approaches, here are the five critical steps every beekeeper should take to ensure thriving hives...</p>
+                        <a href="#" class="read-more">Read Full Article</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="honey-varieties.jpg" alt="Honey Varieties">
+                        <div class="post-category">Product Insights</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Honey Varieties: A Guide to Flavor Profiles</h3>
+                        <div class="post-meta">
+                            <span class="post-date">February 28, 2025</span>
+                            <span class="post-author">By [Your Name]</span>
+                        </div>
+                        <p>Discover the subtle differences between honey varieties and how local flora creates unique flavor experiences...</p>
+                        <a href="#" class="read-more">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-categories">
+                <h3>Explore by Topic</h3>
+                <div class="category-tags">
+                    <a href="#" class="category-tag">Beekeeping Tips</a>
+                    <a href="#" class="category-tag">Veteran Stories</a>
+                    <a href="#" class="category-tag">Sustainable Farming</a>
+                    <a href="#" class="category-tag">Goat Care</a>
+                    <a href="#" class="category-tag">Honey Recipes</a>
+                    <a href="#" class="category-tag">Farm Life</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="slideshow-container">
-            <img src="image1.jpg" alt="Image 1" class="slide" style="display: block;">
-            <img src="image2.jpg" alt="Image 2" class="slide" style="display: none;">
-            <img src="image3.jpg" alt="Image 3" class="slide" style="display: none;">
-        </div>
-        <div class="gallery-captions">
-            <p>Our gallery showcases our farm journey, including beekeeping practices, honey production, our beloved goats, and our veteran roots.</p>
-            <p>Images include our sustainable beekeeping practices, our variety of honey products, and the natural beauty of our farm environment.</p>
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="bees">Bees & Hives</button>
+                <button class="gallery-filter" data-filter="goats">Goats</button>
+                <button class="gallery-filter" data-filter="products">Products</button>
+                <button class="gallery-filter" data-filter="farm">Farm Life</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="bees">
+                    <img src="image1.jpg" alt="Bees on honeycomb" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Spring inspection of thriving hives</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="goats">
+                    <img src="image2.jpg" alt="Goats grazing" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Our goats enjoying the pasture</div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="image3.jpg" alt="Honey jars" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Fresh harvest of spring wildflower honey</div>
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
         </div>
     </section>
+
+    <!-- NEW: Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Customer Testimonials</h2>
+            <p class="section-intro">What our customers say about our products and service</p>
+            
+            <div class="testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>The wildflower honey from Goats 'n Honey Haven is unlike anything I've ever tasted. You can truly taste the difference when honey is produced with such care and respect for the bees.</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="customer1.jpg" alt="Customer portrait" class="author-image">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Loyal Customer since 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>As a fellow veteran, I appreciate the precision and care that goes into each product. The beeswax candles burn longer and cleaner than any others I've used, and the honey makes a perfect gift for family.</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="customer2.jpg" alt="Customer portrait" class="author-image">
+                        <div class="author-info">
+                            <h4>Michael Rivera</h4>
+                            <p>U.S. Army Veteran</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>I ordered the Honey Lover's Gift Basket for my mother's birthday, and she was thrilled! The packaging was beautiful, shipping was fast, and the quality of each item was exceptional. Will definitely order again!</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="customer3.jpg" alt="Customer portrait" class="author-image">
+                        <div class="author-info">
+                            <h4>Emma Chen</h4>
+                            <p>Online Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-cta">
+                <p>Experienced the difference of our veteran-made products?</p>
+                <a href="#" class="cta-button secondary">Leave a Review</a>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <h3>Get in Touch with Goats 'n Honey Haven</h3>
-            <p>We'd love to hear from you whether you have questions about our products, are interested in our workshops, or want to schedule a farm visit.</p>
-            <p><strong>Email:</strong> [your email]</p>
-            <p><strong>Phone:</strong> [your phone number]</p>
-            <p><strong>Social Media:</strong> [links to your social platforms]</p>
-            
-            <h3>Visit Our Farm Store:</h3>
-            <p>[Address]<br>[Hours of operation]</p>
-            
-            <p class="accessibility-note">Accessibility accommodations available for visitors with disabilities—please contact us in advance so we can ensure your visit is comfortable.</p>
-            
-            <p class="veteran-note">Service members, veterans, and their families hold a special place in our hearts. Ask about our military discount and veteran-focused programs.</p>
-        </div>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-        <p id="formResponse"></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Goats 'n Honey Haven | Service-Connected Veteran Owned, Woman-Led Farm</p>
-    </footer>
-    <script src="script.js"></script>
-    <script src="contact.js"></script>
-</body>
-</html>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-columns">
+                <div class="contact-info">
+                    <h3>Get in Touch with Goats 'n Honey Haven</h3>
+                    <p>We'd love to hear from you whether you have questions about our products, are interested in our workshops, or want to schedule a farm visit.</p>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>[your email]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>[your phone number]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Our Farm Store</h4>
+                            <p>[Address]<br>[Hours of operation]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <p class="accessibility-note">Accessibility accommodations available for visitors with disabilities—please contact us in advance so we can ensure your visit is comfortable.</p>
+                    
+                    <p class="veteran-note">Service members, veterans, and their families hold a special place in our hearts. Ask about our military discount and veteran-focused programs.</p>
+                </div>
+                
+                <form id="contactForm">
+                    <h3>Send Us a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="products">Product Question</option>
+                            <option value="order">Order Status</option>
+                            <option value="wholesale">Wholesale Information</option>
+                            <option value="visit">Farm Visit</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter-signup" name="newsletter-signup">
+                        <label for="newsletter-signup">Sign me up for the newsletter</label>
+                    </div>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <p id="formResponse"></p
