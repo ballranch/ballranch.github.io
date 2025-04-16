@@ -42,7 +42,7 @@ footer {
 }
 .slideshow-container {
     position: relative;
-    max-width: 100%;
+    max-width: 50%;
     margin: auto;
 }
 
