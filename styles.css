@@ -41,7 +41,7 @@ footer {
     color: white;
 }
 .slide {
-    width: 80%; /* Adjust the width as needed */
+    width: 60%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     display: none; /* Hide all slides initially */
 }
