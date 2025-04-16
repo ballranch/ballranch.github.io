@@ -40,13 +40,18 @@ footer {
     background-color: #6b8e23;
     color: white;
 }
+.slide {
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Hide all slides initially */
+}
+
 .slideshow-container {
     position: relative;
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
 }
 
-.slide {
-    width: 100%;
-    display: none;
+.slide:first-child {
+    display: block; /* Show the first slide */
 }
